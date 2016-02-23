@@ -51,16 +51,21 @@
 				</tbody>
 			</table>
 			<hr>
-			<a href="{{route('home')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left"></i> Seguir comprando</a>
-			<a href="{{route('home')}}" class="btn btn-primary">Continuar <i class="fa fa-chevron-circle-right"></i></a>
-
+			<h3>
+				<span class="label label-success">
+					Total: ${{number_format($total,2)}}
+				</span>
+			</h3> 
 		</div>
 		@else
 			<h3 class="span label-warning">El carrito esta vacio :(</h3>
 				<hr>
 		<a href="{{route('home')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left"></i> Seguir comprando</a>
-
 		@endif
+
+		<hr>
+			<a href="{{route('home')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left"></i> Seguir comprando</a>
+			<a href="{{route('home')}}" class="btn btn-primary">Continuar <i class="fa fa-chevron-circle-right"></i></a>
 	
 </div>
 
