@@ -54,3 +54,44 @@ Route::get('cart/update/{product}/{quantity}', [
 	'uses' => 'CartController@update'
 	]);
 
+
+
+
+
+// Authentication routes...
+Route::get('inicio-de-sesion', [
+	'as' => 'login',
+	'uses' => 'Auth\AuthController@getLogin'
+	]);
+
+Route::post('inicio-de-sesion', [
+	'as' => 'login-post',
+	'uses' => 'Auth\AuthController@postLogin'
+	]);
+
+Route::get('fin-de-sesion', [
+	'as' => 'logout',
+	'uses' => 'Auth\AuthController@getLogout'
+	]);
+
+// Registration routes...
+Route::get('nuevo-registro', [
+	'as' => 'register-get',
+	'uses' => 'Auth\AuthController@getRegister'
+	]);
+
+Route::post('nuevo-registro', [
+	'as' => 'register-post',
+	'uses' => 'Auth\AuthController@postRegister'
+	]);
+
+/*
+
+// Authentication routes...
+//Route::post('auth/login', ['as' =>'auth/login', 'uses' => 'Auth\AuthController@postLogin']);
+Route::get('auth/logout', ['as' => 'auth/logout', 'uses' => 'Auth\AuthController@getLogout']);
+
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', ['as' => 'auth/register', 'uses' => 'Auth\AuthController@postRegister']);*/
+

@@ -1,4 +1,5 @@
-<footer class="container-fluid">
+<footer class="footer">
+    <div class="container">
 	<div class="row">
 		<div class="col-md-4">
 			<h3>My laravel store</h3>
@@ -36,5 +37,6 @@
 		<div class="col-md-4">
 			<h3></h3>
 		</div>
+	</div>
 	</div>
 </footer>

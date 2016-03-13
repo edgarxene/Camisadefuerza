@@ -30,6 +30,7 @@ class CartController extends Controller
         $product->quantity = 1;
         $cart[$product->slug] = $product;
         \Session::put('cart',$cart);
+        \Session::put('cantArticulos',count($cart));
 
         return redirect()->route('cart-show');
     }
@@ -40,6 +41,7 @@ class CartController extends Controller
         $cart = \Session::get('cart');
         unset($cart[$product->slug]);
         \Session::put('cart',$cart);
+        \Session::put('cantArticulos',count($cart));
 
         return redirect()->route('cart-show');
     }

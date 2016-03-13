@@ -1,6 +1,8 @@
 body{
 	background: #ffffff;
 	font-family: 'Poiret One', cursive;
+    height: 100%;
+
 }
 
 h1,h2,h3,h4,h5,h6
@@ -16,11 +18,17 @@ h1,h2,h3,h4,h5,h6
 
 
 
+
+
 /*FOOTER ================================*/
 footer{
-	background: #1D1D1D;
+	background: #D5D3D3;
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
+	position: relative;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
 }
 
 ul.redes li
@@ -71,6 +79,9 @@ ul.redes li a
 	width: 50px;
 }
 
+/*DETALLE DEL PEDIDO ==================*/
+
+
 /*PINTEREST ===========================*/
 #products {
 position: relative;
@@ -101,4 +112,82 @@ margin-top: -5px;
 -moz-transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
+}
+
+
+/*MENU LOGIN DESPLEGABLE -----------------------*/
+#login-dp{
+    min-width: 350px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+#login-dp h1{
+    	text-align: center;
+}
+
+#login-dp .help-block{
+    font-size:12px;
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:6px; 
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc;
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+.btn-gp{
+    color: #fff;
+    background-color:#d34836;
+}
+.btn-gp:hover{
+    color: #fff;
+    background-color:#e06055; 
+}
+.btn-linkedin{
+    color: #fff;
+    background-color:#0075B2;
+}
+.btn-linkedin:hover{
+    color: #fff;
+    background-color:#32506d; 
+}
+.gp-linkedin{
+    margin-top: 5px;
+    }
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
 }

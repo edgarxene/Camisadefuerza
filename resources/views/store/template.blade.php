@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>@yield('title','Camisa de Fuerza')</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Poiret+One|Lobster+Two' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
 </head>
 <body>
 	@include('store.partials.nav')

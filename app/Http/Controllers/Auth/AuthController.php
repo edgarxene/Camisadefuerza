@@ -23,11 +23,16 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    //Cuando se logea redirecciona a la pagina /home, cuando no se tiene esta pagina se agrega redirectPath y la pagina a donde queremos que nos redirecciones
+    protected $redirectPath = '/';
+
     /**
      * Create a new authentication controller instance.
      *
      * @return void
      */
+
+    
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
