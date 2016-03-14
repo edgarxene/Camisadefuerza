@@ -36,7 +36,7 @@
   </div>
   
 </div>
-
+	<br>
     	@include('store.partials.footer')
 
 

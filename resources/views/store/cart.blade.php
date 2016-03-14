@@ -59,8 +59,7 @@
 		</div>
 		@else
 			<h3 class="span label-warning">El carrito esta vacio :(</h3>
-				<hr>
-		<a href="{{route('home')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left"></i> Seguir comprando</a>
+		
 		@endif
 
 		<hr>

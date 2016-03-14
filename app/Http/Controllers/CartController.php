@@ -60,7 +60,7 @@ class CartController extends Controller
     {
         
         $cart = \Session::forget('cart');
-
+        \Session::put('cantArticulos',count($cart));
         return redirect()->route('cart-show');
     }
     //Total
